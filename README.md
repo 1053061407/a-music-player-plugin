@@ -110,7 +110,7 @@ setTimeout(this.move,10)
 
 
 ## 更新
-###3.17日更新
+### 3.17日更新
 由于是自己之前看element-ui官网组件时马虎了😂 ，没有发现有Slider滑块组件。所以导致自己花了不少实现来写这个进度条。今天直接干脆换了element的slider组件。现在实现了可以通过点击进度条来使歌曲调到对应的秒数。主要代码如下：
 ```
 <el-slider v-model="currentTime1" v-bind:max="duration1" @change="replay"></el-slider>
