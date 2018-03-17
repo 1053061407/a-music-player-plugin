@@ -133,11 +133,11 @@ sliderMove() {
         var audio =  document.getElementsByTagName('audio')[0];
         var currentTime = audio.currentTime;
         var duration  = audio.duration;
-        this.duration1 = duration;  //  是播放时间在滑块上的映射值，是Number
-        this.currentTime1 = currentTime;   //  是歌曲总时长在滑块上的映射值，是Number
+        this.duration1 = duration;   //  是当前播放到的时间在滑块上的映射值，是Number
+        this.currentTime1 = currentTime; //  是歌曲总时长在滑块上的映射值，是Number 
         var currentSecond = Math.floor(currentTime%60)
         var currentMinute = Math.floor(currentTime/60)
-        this.currentTime = currentMinute + ':' + currentSecond  // this.currentTime 是用来在界面上显示当前播放时间的，是字符串。
+        this.currentTime = currentMinute + ':' + currentSecond  // this.currentTime是用来在界面上显示当前播放到的时间，是字符串。
         var durationSecond = Math.floor(duration%60)
         var durationMinute = Math.floor(duration/60)
         this.duration = durationMinute + ':' + durationSecond  // 是用来在界面上显示歌曲总时长的，也是字符串。
